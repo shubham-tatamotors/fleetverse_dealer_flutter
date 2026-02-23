@@ -84,7 +84,7 @@ class _WebWrapperState extends State<WebWrapper> {
           if (_controller != null && await _controller!.canGoBack()) {
             _controller!.goBack();
           } else {
-            Navigator.of(context).pop();
+            SystemNavigator.pop();
           }
         },
         child: Scaffold(
